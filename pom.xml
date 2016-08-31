@@ -5,10 +5,10 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>dhruv</artifactId>
+    <artifactId>kabini</artifactId>
     <groupId>com.edu</groupId>
     <version>trunk-SNAPSHOT</version>
-    <name>Project - Dhruv</name>
+    <name>Project - Kabini</name>
 
     <properties>
         <jdk.source>1.8</jdk.source>
@@ -52,24 +52,6 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>1.2.1</version>
                 <executions>
-
-                    <execution>
-                        <id>npm-setup-registry</id>
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>exec</goal>
-                        </goals>
-                        <configuration>
-                            <executable>npm</executable>
-                            <arguments>
-                                <argument>config</argument>
-                                <argument>set</argument>
-                                <argument>registry</argument>
-                                <argument>http://artifactory.cobalt.com/artifactory/api/npm/npm-repo</argument>
-                            </arguments>
-                        </configuration>
-                    </execution>
-
                     <execution>
                         <id>npm-install</id>
                         <phase>generate-sources</phase>
@@ -99,14 +81,14 @@
                     </execution>
 
                     <!--<execution>-->
-                        <!--<id>grunt</id>-->
-                        <!--<phase>generate-sources</phase>-->
-                        <!--<goals>-->
-                            <!--<goal>exec</goal>-->
-                        <!--</goals>-->
-                        <!--<configuration>-->
-                            <!--<executable>node_modules/grunt-cli/bin/grunt</executable>-->
-                        <!--</configuration>-->
+                    <!--<id>grunt</id>-->
+                    <!--<phase>generate-sources</phase>-->
+                    <!--<goals>-->
+                    <!--<goal>exec</goal>-->
+                    <!--</goals>-->
+                    <!--<configuration>-->
+                    <!--<executable>node_modules/grunt-cli/bin/grunt</executable>-->
+                    <!--</configuration>-->
                     <!--</execution>-->
 
                 </executions>
